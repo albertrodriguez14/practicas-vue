@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- cabezera   -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicas Vue</title>
+    <link rel="stylesheet" href="">
+</head>
+<!--cuerpo -->
+
+<body>
+
+
+    <div class="app"> {{ nombre }} </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        new Vue({
+
+            el: '.app',
+            data: {
+
+                nombre: "Hello soy Vue"
+            }
+
+
+
+
+        });
+
+    </script>
+</body>
+
+</html>
