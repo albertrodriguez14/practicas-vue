@@ -13,8 +13,13 @@
 <body>
 
 
-    <div class="app"> {{ nombre }} </div>
+    <div class="app"> {{ Title }}
 
+        <ul>
+            <li v-for=' listas in  Lista '> {{ listas.nombre }} </li>
+        </ul>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -25,7 +30,16 @@
             el: '.app',
             data: {
 
-                nombre: "Hello soy Vue"
+                Title: "Hola esto es una lista",
+
+                Lista: [
+                    { nombre: "texto 1" },
+                    { nombre: "texto 2" },
+                    { nombre: "texto 3" },
+                    { nombre: "texto 4" }
+                ]
+
+
             }
 
 
